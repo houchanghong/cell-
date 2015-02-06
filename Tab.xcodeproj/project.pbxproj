@@ -12,6 +12,9 @@
 		047F1D631A52561A00C3A3D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F1D621A52561A00C3A3D9 /* Images.xcassets */; };
 		047F1D661A52561A00C3A3D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047F1D641A52561A00C3A3D9 /* LaunchScreen.xib */; };
 		047F1D721A52561A00C3A3D9 /* TabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D711A52561A00C3A3D9 /* TabTests.m */; };
+		047F1D7D1A52563600C3A3D9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D7B1A52563600C3A3D9 /* RootViewController.m */; };
+		047F1D831A52564A00C3A3D9 /* RootTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D7F1A52564A00C3A3D9 /* RootTableViewCell.m */; };
+		047F1D861A52566700C3A3D9 /* RootTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F1D841A52566700C3A3D9 /* RootTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 		047F1D6B1A52561A00C3A3D9 /* TabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047F1D701A52561A00C3A3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047F1D711A52561A00C3A3D9 /* TabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabTests.m; sourceTree = "<group>"; };
+		047F1D7B1A52563600C3A3D9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		047F1D7C1A52563600C3A3D9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		047F1D7F1A52564A00C3A3D9 /* RootTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewCell.m; sourceTree = "<group>"; };
+		047F1D811A52564A00C3A3D9 /* RootTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewCell.h; sourceTree = "<group>"; };
+		047F1D841A52566700C3A3D9 /* RootTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableView.m; sourceTree = "<group>"; };
+		047F1D851A52566700C3A3D9 /* RootTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableView.h; sourceTree = "<group>"; };
+		047F1D871A52A38A00C3A3D9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,12 @@
 			children = (
 				047F1D5F1A52561A00C3A3D9 /* AppDelegate.h */,
 				047F1D601A52561A00C3A3D9 /* AppDelegate.m */,
+				047F1D841A52566700C3A3D9 /* RootTableView.m */,
+				047F1D851A52566700C3A3D9 /* RootTableView.h */,
+				047F1D7C1A52563600C3A3D9 /* RootViewController.h */,
+				047F1D7B1A52563600C3A3D9 /* RootViewController.m */,
+				047F1D811A52564A00C3A3D9 /* RootTableViewCell.h */,
+				047F1D7F1A52564A00C3A3D9 /* RootTableViewCell.m */,
 				047F1D621A52561A00C3A3D9 /* Images.xcassets */,
 				047F1D641A52561A00C3A3D9 /* LaunchScreen.xib */,
 				047F1D5B1A52561A00C3A3D9 /* Supporting Files */,
@@ -90,6 +106,7 @@
 			children = (
 				047F1D5C1A52561A00C3A3D9 /* Info.plist */,
 				047F1D5D1A52561A00C3A3D9 /* main.m */,
+				047F1D871A52A38A00C3A3D9 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,6 +229,9 @@
 			files = (
 				047F1D611A52561A00C3A3D9 /* AppDelegate.m in Sources */,
 				047F1D5E1A52561A00C3A3D9 /* main.m in Sources */,
+				047F1D7D1A52563600C3A3D9 /* RootViewController.m in Sources */,
+				047F1D831A52564A00C3A3D9 /* RootTableViewCell.m in Sources */,
+				047F1D861A52566700C3A3D9 /* RootTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Tab/PrefixHeader.pch;
 				INFOPLIST_FILE = Tab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -337,7 +359,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = Tab/PrefixHeader.pch;
 				INFOPLIST_FILE = Tab/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,6 +420,7 @@
 				047F1D771A52561A00C3A3D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		047F1D781A52561A00C3A3D9 /* Build configuration list for PBXNativeTarget "TabTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +429,7 @@
 				047F1D7A1A52561A00C3A3D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
