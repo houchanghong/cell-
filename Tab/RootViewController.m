@@ -26,9 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"晋商贷"];
+    [self setTitle:@"某某某"];
     
-    firstArr = [[NSMutableArray alloc] initWithObjects:@"Icon_DingCunBao",@"Cell_Separator_DingCunBao",@"定存宝",@"省心省力",@"每月获得利息，到期收回本金",@"可投资", nil];
+    firstArr = [[NSMutableArray alloc] initWithObjects:@"Icon_DingCunBao",@"Cell_Separator_DingCunBao",@"宝宝宝",@"省心省力",@"每月获得利息，到期收回本金",@"可投资", nil];
     secondArr = [[NSMutableArray alloc] initWithObjects:@"Icon_YueXiTong",@"Cell_Separator_YueXiTong",@"月息通",@"最高13.24%",@"每月等额本息汇款，流动性强",@"已售完", nil];
     thirdArr = [[NSMutableArray alloc] initWithObjects:@"Icon_XinShouBiao",@"Cell_Separator_XinShouBiao",@"新手专享",@"轻松理财第一步",@"为首次投资者定制的精选项目",@"可投资", nil];
     
